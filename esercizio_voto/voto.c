@@ -4,6 +4,8 @@ int main(){
 
     int voto;
 
+    do
+    {
     printf("Inserisci un voto: ");
     scanf("%i", &voto);
 
@@ -32,6 +34,13 @@ int main(){
         default:
         printf("Voto non valido!\n");
     }
+    if (voto<1 || voto>10){
+        printf("Prova nuovamente: \n");
+    }
+    
+    } while (voto < 1 || voto > 10);
+    
+
 return 0;
 
 }
